@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl,
+dd,
+figure,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+fieldset {
+  border: 0;
+  min-width: 0;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ───────────── Type ───────────── */
+
+.h1 {
+  font-size: var(--fs-h1);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: var(--tracking-tight);
+  text-wrap: balance;
+}
+
+.h2 {
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: var(--tracking-tight);
+  text-wrap: balance;
+}
+
+.h3 {
+  font-size: var(--fs-h3);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.lead {
+  font-size: var(--fs-lead);
+  color: var(--muted);
+  max-width: 46ch;
+}
+
+.eyebrow {
+  font-size: var(--fs-eyebrow);
+  font-weight: 800;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--purple);
+}
+
+.eyebrow--gold {
+  color: var(--gold);
+}
+
+.eyebrow--navy {
+  color: var(--navy);
+}
+
+.hint {
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.link {
+  background: none;
+  border: 0;
+  padding: 6px 2px;
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--purple);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border-radius: 6px;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid var(--border);
+  width: 100%;
+  margin: var(--s2) 0;
+}
+
+.empty {
+  color: var(--muted);
+  padding: var(--s5) 0;
+}
+
+/* ───────────── Page shells ───────────── */
+
+.page {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Kids course hero: flat gold with one soft lighter disc. */
+.page--gold {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.page--gold::before {
+  content: '';
+  position: absolute;
+  width: 70vmax;
+  height: 70vmax;
+  right: -22vmax;
+  top: -30vmax;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  pointer-events: none;
+}
+
+.page--gold .lead {
+  color: rgba(16, 22, 45, 0.78);
+}
+
+/* Purple gradient hero, used for the game table and results. */
+.page--stage {
+  background: var(--grad-stage);
+  color: var(--white);
+}
+
+.page--stage .lead {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.page > * {
+  position: relative;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,13 @@
+# Render blueprint: one always-on Node service that serves the web app and the game's WebSocket.
+services:
+  - type: web
+    name: who-am-i
+    runtime: node
+    plan: free
+    # Dev dependencies are needed at build time (Vite, TypeScript).
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22

@@ -1,0 +1,70 @@
+import type { LanguageLevel } from '../types';
+
+/**
+ * Suggested questions per level. They are support, never the only option:
+ * the input always accepts a free question.
+ */
+export const SUGGESTED_QUESTIONS: Record<LanguageLevel, string[]> = {
+  A1: [
+    'Am I a person?',
+    'Am I an animal?',
+    'Am I a place?',
+    'Am I a thing?',
+    'Am I famous?',
+    'Am I a man?',
+    'Am I a woman?',
+    'Am I alive?',
+    'Am I big?',
+    'Am I small?',
+    'Am I from the USA?',
+    'Am I from Brazil?',
+    'Am I an actor?',
+    'Am I a singer?',
+    'Do I have four legs?',
+    'Can I fly?',
+    'Can I swim?',
+    'Do I work in a school?',
+  ],
+  A2: [
+    'Am I a real person?',
+    'Am I famous for music?',
+    'Am I famous for sports?',
+    'Do I live in the ocean?',
+    'Do people use me every day?',
+    'Can you find me in a house?',
+    'Do I wear a uniform?',
+    'Do I work with people?',
+    'Am I bigger than a car?',
+    'Was I born a long time ago?',
+    'Do many tourists visit me?',
+    'Am I in Europe?',
+    'Do I eat meat?',
+    'Am I dangerous?',
+  ],
+  B1: [
+    'Have I appeared in movies?',
+    'Have I won an important award?',
+    'Am I known around the world?',
+    'Do I live in Europe?',
+    'Would you find me in a city?',
+    'Have I been in the news recently?',
+    'Do people need special training to be me?',
+    'Was I invented more than a hundred years ago?',
+    'Am I still alive today?',
+    'Do people travel a long way to see me?',
+  ],
+  B2: [
+    'Am I mainly known for my professional achievements?',
+    'Would most people recognise me immediately?',
+    'Have I had a lasting impact on my field?',
+    'Am I associated with a particular country or culture?',
+    'Would life be noticeably different without me?',
+    'Am I more likely to be found indoors than outdoors?',
+  ],
+  C1: [
+    'Have I influenced popular culture?',
+    'Would people recognise me immediately?',
+    'Is my reputation controversial in any way?',
+    'Am I better known for what I did than for who I was?',
+  ],
+};

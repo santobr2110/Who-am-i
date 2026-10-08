@@ -1,0 +1,88 @@
+/*
+ * Four Bridges design tokens.
+ * Extracted from fourbridges.com.br (style.css v1.32) — the site is the source of truth.
+ * See DESIGN_SYSTEM.md for how each token is used.
+ */
+:root {
+  /* Brand palette (verbatim from the site's :root) */
+  --purple: #4b126f;
+  --purple2: #7b1488;
+  --magenta: #b31b85;
+  --navy: #10162d;
+  --gold: #f3b316;
+  --lilac: #f3ebf7;
+  --soft: #faf7fb;
+  --text: #181529;
+  --muted: #6d6675;
+  --border: #e9e0ec;
+
+  /* Derived from site surfaces */
+  --purple-deep: #24083a;
+  --gold-light: #ffd34b;
+  --gold-ink: #7a5200;
+  --white: #fff;
+
+  /* Game semantics. YES reuses the site's WhatsApp green; NO sits between magenta and red. */
+  --yes: #1fba67;
+  --yes-ink: #0b6b39;
+  --yes-soft: #e4f8ed;
+  --no: #d8334a;
+  --no-ink: #a31c30;
+  --no-soft: #fde8eb;
+  --unsure: var(--gold);
+  --unsure-ink: var(--gold-ink);
+  --unsure-soft: #fef4d6;
+
+  /* Gradients */
+  --grad-primary: linear-gradient(120deg, var(--purple), var(--magenta));
+  --grad-stage: linear-gradient(125deg, #30104f, #6e1478 55%, #151a34);
+  --grad-cta: linear-gradient(110deg, #32104f, #751475 55%, #b11c84);
+  --grad-gold: linear-gradient(145deg, var(--gold-light), #f0b31b);
+  --grad-card: linear-gradient(155deg, #fff 58%, #fbf7fc 100%);
+
+  /* Typography */
+  --font: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fs-eyebrow: 0.6875rem;
+  --fs-sm: 0.8125rem;
+  --fs-body: 1rem;
+  --fs-lead: 1.125rem;
+  --fs-h3: 1.3125rem;
+  --fs-h2: clamp(1.6rem, 1.1rem + 2vw, 2.45rem);
+  --fs-h1: clamp(2.4rem, 1.2rem + 5.4vw, 4.6rem);
+  --tracking-tight: -0.045em;
+  --tracking-eyebrow: 0.17em;
+
+  /* Shape */
+  --radius-sm: 14px;
+  --radius: 22px;
+  --radius-lg: 30px;
+  --radius-pill: 999px;
+
+  /* Elevation */
+  --shadow: 0 30px 70px -45px rgba(59, 15, 83, 0.45);
+  --shadow-btn: 0 14px 35px -22px #4b126f;
+  --shadow-pill: 0 16px 30px -22px rgba(40, 20, 50, 0.5);
+  --shadow-art: 0 34px 75px -42px rgba(58, 24, 4, 0.34);
+  --shadow-glow: 0 0 0 4px rgba(243, 179, 22, 0.28), 0 22px 50px -24px rgba(243, 179, 22, 0.75);
+
+  /* Focus ring (same double ring the site uses) */
+  --focus: 0 0 0 4px #fff, 0 0 0 8px rgba(179, 27, 133, 0.65);
+  --focus-on-dark: 0 0 0 3px var(--purple-deep), 0 0 0 7px var(--gold);
+
+  /* Spacing scale */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 66px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --t-fast: 0.2s;
+  --t-med: 0.42s;
+
+  --tap: 48px;
+}

@@ -1,0 +1,6 @@
+node_modules
+dist
+.DS_Store
+# Stray clone of the GitHub repo made inside the project folder
+/Who am i/
+.vite
